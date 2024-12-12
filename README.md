@@ -2,13 +2,13 @@
 
 ## Abstract
 
-The OpenHealthCare is an open-source, transparent, and decentralized healthcare insurance solution designed to provide full coverage for patients' healthcare costs. This protocol leverages collective pooling of funds, smart contracts, and a standardized coding system (HCPCS codes) to ensure equitable access to healthcare services. By aligning economic incentives and decentralizing governance, DHIP seeks to address inefficiencies in traditional insurance systems while maintaining financial sustainability. Moreover, DHIP represents a paradigm shift, promoting trust and collaboration among participants and setting a new standard for fairness in healthcare.
+The OpenHealthCare is an Open-source, Transparent, and Decentralized Healthcare Insurance Protocol (DHIP) designed to provide full coverage for patients' healthcare costs. This protocol leverages collective pooling of funds, smart contracts, and a standardized coding system (HCPCS codes) to ensure equitable access to healthcare services. By aligning economic incentives and decentralizing governance, DHIP seeks to address inefficiencies in traditional insurance systems while maintaining financial sustainability. Moreover, DHIP represents a paradigm shift, promoting trust and collaboration among participants and setting a new standard for fairness in healthcare.
 
 ## Introduction
 
 Healthcare costs continue to rise globally, leaving many individuals either uninsured or underinsured. Traditional insurance models often involve opaque pricing, administrative inefficiencies, and profit-driven middlemen. In response to these challenges, DHIP proposes a decentralized, community-driven approach that eliminates intermediaries and ensures transparency.
 
-By leveraging blockchain technology, DHIP enables:
+The OpenHealthCare protocol enables:
 
 1. Full transparency in fund management.
 2. Decentralized governance, where participants influence protocol decisions.
@@ -16,6 +16,26 @@ By leveraging blockchain technology, DHIP enables:
 4. Economic sustainability, driven by a pooled-risk model.
 
 These innovations aim to make healthcare accessible to all while fostering a sense of shared responsibility and empowerment among participants.
+
+## Participants and Benefits
+
+The OpenHealthCare ecosystem is comprised of multiple participants, each playing a critical role:
+
+1. Participants (Insured Individuals):
+Role: Contribute to the fund and submit claims for healthcare services.
+Benefits: Receive full or partial reimbursements for eligible healthcare costs, lower premium expenses, and surplus redistributions in surplus years.
+
+2. Healthcare Providers:
+Role: Deliver medical services and accept payments processed through DHIP smart contracts.
+Benefits: Ensure timely payments with reduced administrative overhead and enhanced trust through transparent payment mechanisms.
+
+3. Governance Members (DAO Participants):
+Role: Vote on key decisions, including contribution rates, surplus management, and deficit recovery strategies.
+Benefits: Shape the future of the protocol, ensuring it aligns with the collective interests of the community.
+
+4. Technology Partners (Foundation/Non-Profit):
+Role: Maintain the protocol’s infrastructure, including smart contracts, blockchain integrations, and dApps.
+Benefits: Earn revenue through partnerships and contribute to advancing decentralized healthcare solutions.
 
 ## Economic Model
 
