@@ -1,9 +1,5 @@
 # OpenHealthCare
 
-![Slide 4_3 - 1](https://github.com/user-attachments/assets/79b3d1be-0d4f-4c70-990c-4593075b1146)
-
-## Abstract
-
 OpenHealthCare is a Decentralized Healthcare Insurance Protocol (DHIP) designed to provide full coverage for patients' healthcare costs. This open-source, transparent protocol leverages collective pooling of funds, smart contracts, and a standardized coding system (HCPCS codes) to ensure equitable access to healthcare services. By aligning economic incentives and decentralizing governance, OpenHealthCare seeks to address inefficiencies in traditional insurance systems while maintaining financial sustainability. This represents a paradigm shift, promoting trust and collaboration among participants and setting a new standard for fairness in healthcare.
 
 ## Introduction
