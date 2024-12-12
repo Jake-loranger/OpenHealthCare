@@ -1,8 +1,8 @@
-# Decentralized Healthcare Insurance Protocol Whitepaper
+# OpenHealthCare
 
 ## Abstract
 
-The Decentralized Healthcare Insurance Protocol (DHIP) is an open-source, transparent, and decentralized healthcare insurance solution designed to provide full coverage for patients' healthcare costs. This protocol leverages collective pooling of funds, smart contracts, and a standardized coding system (HCPCS codes) to ensure equitable access to healthcare services. By aligning economic incentives and decentralizing governance, DHIP seeks to address inefficiencies in traditional insurance systems while maintaining financial sustainability. Moreover, DHIP represents a paradigm shift, promoting trust and collaboration among participants and setting a new standard for fairness in healthcare.
+The OpenHealthCare is an open-source, transparent, and decentralized healthcare insurance solution designed to provide full coverage for patients' healthcare costs. This protocol leverages collective pooling of funds, smart contracts, and a standardized coding system (HCPCS codes) to ensure equitable access to healthcare services. By aligning economic incentives and decentralizing governance, DHIP seeks to address inefficiencies in traditional insurance systems while maintaining financial sustainability. Moreover, DHIP represents a paradigm shift, promoting trust and collaboration among participants and setting a new standard for fairness in healthcare.
 
 ## Introduction
 
