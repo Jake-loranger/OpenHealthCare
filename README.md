@@ -20,20 +20,20 @@ These innovations aim to make healthcare accessible to all while fostering a sen
 The OpenHealthCare ecosystem is comprised of multiple participants, each playing a critical role:
 
 1. Participants (Insured Individuals):
-Role: Contribute to the fund and submit claims for healthcare services.
-Benefits: Receive full or partial reimbursements for eligible healthcare costs, lower premium expenses, and surplus redistributions in surplus years.
+- Role: Contribute to the fund and submit claims for healthcare services.
+- Benefits: Receive full or partial reimbursements for eligible healthcare costs, lower premium expenses, and surplus redistributions in surplus years.
 
 2. Healthcare Providers:
-Role: Deliver medical services and accept payments processed through DHIP smart contracts.
-Benefits: Ensure timely payments with reduced administrative overhead and enhanced trust through transparent payment mechanisms.
+- Role: Deliver medical services and accept payments processed through DHIP smart contracts.
+- Benefits: Ensure timely payments with reduced administrative overhead and enhanced trust through transparent payment mechanisms.
 
 3. Governance Members (DAO Participants):
-Role: Vote on key decisions, including contribution rates, surplus management, and deficit recovery strategies.
-Benefits: Shape the future of the protocol, ensuring it aligns with the collective interests of the community.
+- Role: Vote on key decisions, including contribution rates, surplus management, and deficit recovery strategies.
+- Benefits: Shape the future of the protocol, ensuring it aligns with the collective interests of the community.
 
 4. Technology Partners (Foundation/Non-Profit):
-Role: Maintain the protocol’s infrastructure, including smart contracts, blockchain integrations, and dApps.
-Benefits: Earn revenue through partnerships and contribute to advancing decentralized healthcare solutions.
+- Role: Maintain the protocol’s infrastructure, including smart contracts, blockchain integrations, and dApps.
+- Benefits: Earn revenue through partnerships and contribute to advancing decentralized healthcare solutions.
 
 ## Economic Model
 
@@ -98,26 +98,26 @@ All transactions and decisions are publicly verifiable, fostering accountability
 
 ### Phase 1: Protocol Development
 
-Blockchain Platform: Utilize Ethereum or Algorand for their robust smart contract capabilities and scalability.
-Smart Contracts: Develop contracts for fund pooling, claims processing, and surplus management.
-HCPCS Integration: Standardize claims processing with a library of HCPCS codes.
+- Blockchain Platform: Utilize Ethereum or Algorand for their robust smart contract capabilities and scalability. Build documentation to the methods involved in the smart contracts.
+- Smart Contracts: Develop contracts for fund pooling, claims processing, and surplus management.
+- HCPCS Integration: Standardize claims processing with a library of HCPCS codes. Build open-sourced documentation for cost of coveraget for each medical procedure code.  
 
 ### Phase 2: Pilot Deployment
 
-Launch a small-scale pilot with 1,000 participants.
-Monitor claims patterns and adjust actuarial models.
-Test DAO-based governance and refine voting mechanisms.
+- Launch a small-scale pilot with 1,000 participants.
+- Monitor claims patterns and adjust actuarial models.
+- Test DAO-based governance and refine voting mechanisms.
 
 ### Phase 3: Scaling
 
-Expand participant base to regional and national levels.
-Integrate with healthcare providers for seamless payments.
-Optimize blockchain technology for transaction efficiency and cost, ensuring affordability.
+- Expand participant base to regional and national levels.
+- Integrate with healthcare providers for seamless payments.
+- Optimize blockchain technology for transaction efficiency and cost, ensuring affordability.
 
 ### Phase 4: Ecosystem Expansion
 
-Partner with third-party services (e.g., telemedicine, pharmacies).
-Introduce value-added services like preventive care incentives, wellness programs, and chronic disease management tools.
+- Partner with third-party services (e.g., telemedicine, pharmacies).
+- Introduce value-added services like preventive care incentives, wellness programs, and chronic disease management tools.
 
 ## Technology Stack
 
