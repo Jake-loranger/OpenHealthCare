@@ -1,8 +1,10 @@
-# Modeling Healthcare Fund Contributions Using an Arctangent Function
+# OpenHealthCare Economics
+
+## Modeling Healthcare Fund Contributions Using an Arctangent Function
 
 This document proposes an arctangent-based equation to model individual contributions to a universal healthcare fund. The goal is to ensure that total contributions exceed the healthcare costs paid out by approximately 15%. This model accounts for personal income, regional healthcare costs, and other socioeconomic factors while ensuring fairness and sustainability.
 
-## The Equation
+### The Equation
 
 <img src="https://github.com/user-attachments/assets/f7b38d80-838d-4306-b31c-12dba4896327" height="250" />
 
@@ -29,39 +31,39 @@ The proposed equation for individual contributions is:
 ### Behavior of the Equation
 1. **Sigmoidal Shape:** The arctangent function ensures that contributions grow gradually for lower incomes, increase sharply for middle-income groups, and asymptotically approach a maximum for high-income groups.
 2. **Fairness and Proportionality:** Contributions are scaled based on regional healthcare costs and individual income, ensuring proportional contributions.
-3. **Adjustability:** Parameters \(k\), \(b\), and \(A\) can be tuned to fit real-world data and policy goals.
+3. **Adjustability:** Parameters <i>k</i>, <i>b</i>, and <i>A</i> can be tuned to fit real-world data and policy goals.
 
-## Objective
-The universal fund’s total contributions \(U\) should be approximately 15% more than the total healthcare costs \(T\) paid out:
+### Objective
+The universal fund’s total contributions <i>U</i> should be approximately 15% more than the total healthcare costs <i>T</i> paid out:
 
 ![Equation](https://latex.codecogs.com/png.latex?\dpi{150}\color{White}U%20=%201.15%20\cdot%20T)
 
 
-## Implementation Steps
+### Implementation Steps
 1. **Data Collection:** Gather real-world data for:
-   - Personal income distributions (\(I_i\)).
-   - Regional and national healthcare costs (\(C_i\), \(\bar{C}\)).
-   - Socioeconomic factors (\(F\)).
+   - Personal income distributions <i>P<sub>i</sub></i>.
+   - Regional and national healthcare costs <i>C<sub>i</sub></i>, C<sub>bar</sub></i>.
+   - Socioeconomic factors <i>F</i>.
 
-2. **Parameter Estimation:** Determine initial values for \(A\), \(k\), \(b\), \(C\), and \(\beta\) using historical data.
+2. **Parameter Estimation:** Determine initial values for <i>A</i>, <i>k</i>, <i>b</i>, <i>C</i> and &beta; using historical data.
 
 3. **Simulation:**
-   - Compute contributions \(P_i\) for a representative population sample.
-   - Aggregate contributions to find \(U\).
-   - Compare \(U\) to \(T\) to ensure \(U \approx 1.15 \cdot T\).
+   - Compute contributions <i>P<sub>i</sub></i> for a representative population sample.
+   - Aggregate contributions to find <i>U</i>.
+   - Compare <i>U</i> to <i>T</i> to ensure the fund contribution is 1.15 times the healthcare costs.
 
 4. **Refinement:**
    - Adjust parameters to minimize deviation from the 15% target.
    - Ensure equitable contributions across different income brackets.
 
-## Visualization
-A plot of the equation \(P_i\) against \(I_i\) illustrates its behavior:
+### Visualization
+A plot of the equation <i>P<sub>i</sub></i> against <i>I<sub>i</sub></i> illustrates its behavior:
 
-- **Low-Income Individuals:** Contributions approach the baseline \(C\).
+- **Low-Income Individuals:** Contributions approach the baseline <i>C</i>.
 - **Middle-Income Individuals:** Contributions increase sharply due to the arctangent curve.
-- **High-Income Individuals:** Contributions asymptotically approach \(A + C\).
+- **High-Income Individuals:** Contributions asymptotically approach <i>A + C</i>.
 
-## Next Steps
+### Next Steps
 1. Integrate this model into a larger simulation framework.
 2. Validate the model using real-world data.
 3. Publish findings and refine the model based on feedback from policymakers and stakeholders.
