@@ -3,13 +3,13 @@ import algosdk from 'algosdk'
 import * as React from 'react'
 import { Button, Form, Row } from 'react-bootstrap'
 
-const Home: React.FC = () => {
+const Profile: React.FC = () => {
 
-  return (
-    <div className='text-white'>
-      Home
-    </div>
-  )
+    return (
+        <div className='text-white'>
+            Profile
+        </div>
+    )
 }
 
-export default Home
+export default Profile

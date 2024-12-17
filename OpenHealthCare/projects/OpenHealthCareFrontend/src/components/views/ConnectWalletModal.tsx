@@ -3,7 +3,7 @@ import algosdk from 'algosdk'
 import * as React from 'react'
 import { Button, Form, Modal, Row } from 'react-bootstrap'
 
-const ConnectWallet: React.FC = () => {
+const ConnectWalletModal: React.FC = () => {
     const {
         algodClient,
         activeAddress,
@@ -61,12 +61,6 @@ const ConnectWallet: React.FC = () => {
     }
 
     return (
-
-        // <Modal onHide={() => setShowModal(false)}>
-        //     <Modal.Header closeButton>
-        //         <Modal.Title>Connect Wallet</Modal.Title>
-        //     </Modal.Header>
-        //     <Modal.Body>
         <div>
             <div className='my-4'>
                 <h4>
@@ -148,4 +142,4 @@ const ConnectWallet: React.FC = () => {
     )
 }
 
-export default ConnectWallet
+export default ConnectWalletModal

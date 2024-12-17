@@ -1,0 +1,14 @@
+/* Sidebar */
+.bg-dark {
+    background-color: #343a40 !important;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  /* Main content spacing */
+  .container-fluid {
+    min-height: 100vh;
+    overflow-y: auto;
+  }
