@@ -3,7 +3,7 @@ import algosdk from 'algosdk'
 import * as React from 'react'
 import { Button, Form, Modal, Row } from 'react-bootstrap'
 
-const ConnectWalletModal: React.FC = () => {
+const ConnectWalletModal: React.FC<{ show: boolean; onHide: () => void }> = ({ show, onHide }) => {
     const {
         algodClient,
         activeAddress,
@@ -61,84 +61,89 @@ const ConnectWalletModal: React.FC = () => {
     }
 
     return (
-        <div>
-            <div className='my-4'>
-                <h4>
-                    Current Network: <span className='active-network'>{activeNetwork}</span>
-                </h4>
-                <Button
-                    variant='secondary'
-                    onClick={() => setActiveNetwork(NetworkId.BETANET)}
-                    disabled={activeNetwork === NetworkId.BETANET}
-                >
-                    Set to Betanet
-                </Button>
-                <Button
-                    variant='secondary'
-                    className='mx-4'
-                    onClick={() => setActiveNetwork(NetworkId.TESTNET)}
-                    disabled={activeNetwork === NetworkId.TESTNET}
-                >
-                    Set to Testnet
-                </Button>
-                <Button
-                    variant='secondary'
-                    onClick={() => setActiveNetwork(NetworkId.MAINNET)}
-                    disabled={activeNetwork === NetworkId.MAINNET}
-                >
-                    Set to Mainnet
-                </Button>
-            </div>
-
-            {wallets.map((wallet) => (
-                <div key={wallet.id} className='my-4'>
+        <Modal show={show} onHide={onHide}>
+            <Modal.Header closeButton>
+                <Modal.Title>Connect Wallet</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <div className='my-4'>
                     <h4>
-                        {wallet.metadata.name} {wallet.isActive ? '[Active]' : ''}
+                        Current Network: <span className='active-network'>{activeNetwork}</span>
                     </h4>
+                    <Button
+                        variant='secondary'
+                        onClick={() => setActiveNetwork(NetworkId.BETANET)}
+                        disabled={activeNetwork === NetworkId.BETANET}
+                    >
+                        Set to Betanet
+                    </Button>
+                    <Button
+                        variant='secondary'
+                        className='mx-4'
+                        onClick={() => setActiveNetwork(NetworkId.TESTNET)}
+                        disabled={activeNetwork === NetworkId.TESTNET}
+                    >
+                        Set to Testnet
+                    </Button>
+                    <Button
+                        variant='secondary'
+                        onClick={() => setActiveNetwork(NetworkId.MAINNET)}
+                        disabled={activeNetwork === NetworkId.MAINNET}
+                    >
+                        Set to Mainnet
+                    </Button>
+                </div>
 
-                    <div className='wallet-buttons'>
-                        <Button
-                            onClick={() => wallet.connect()}
-                            disabled={isConnectDisabled(wallet)}
-                        >
-                            Connect
-                        </Button>
-                        <Button
-                            className='mx-4'
-                            onClick={() => wallet.disconnect()}
-                            disabled={!wallet.isConnected}
-                        >
-                            Disconnect
-                        </Button>
-                        {wallet.isActive ? (
-                            <Button onClick={sendTransaction} disabled={isSending}>
-                                {isSending ? 'Sending Transaction...' : 'Send Transaction'}
-                            </Button>
-                        ) : (
+                {wallets.map((wallet) => (
+                    <div key={wallet.id} className='my-4'>
+                        <h4>
+                            {wallet.metadata.name} {wallet.isActive ? '[Active]' : ''}
+                        </h4>
+
+                        <div className='wallet-buttons'>
                             <Button
-                                onClick={() => wallet.setActive()}
+                                onClick={() => wallet.connect()}
+                                disabled={isConnectDisabled(wallet)}
+                            >
+                                Connect
+                            </Button>
+                            <Button
+                                className='mx-4'
+                                onClick={() => wallet.disconnect()}
                                 disabled={!wallet.isConnected}
                             >
-                                Set Active
+                                Disconnect
                             </Button>
+                            {wallet.isActive ? (
+                                <Button onClick={sendTransaction} disabled={isSending}>
+                                    {isSending ? 'Sending Transaction...' : 'Send Transaction'}
+                                </Button>
+                            ) : (
+                                <Button
+                                    onClick={() => wallet.setActive()}
+                                    disabled={!wallet.isConnected}
+                                >
+                                    Set Active
+                                </Button>
+                            )}
+                        </div>
+
+                        {wallet.isActive && wallet.accounts.length > 0 && (
+                            <Form.Select
+                                className='my-4'
+                                onChange={(e) => setActiveAccount(e, wallet)}
+                            >
+                                {wallet.accounts.map((account) => (
+                                    <option key={account.address} value={account.address}>
+                                        {account.address}
+                                    </option>
+                                ))}
+                            </Form.Select>
                         )}
                     </div>
-
-                    {wallet.isActive && wallet.accounts.length > 0 && (
-                        <Form.Select
-                            className='my-4'
-                            onChange={(e) => setActiveAccount(e, wallet)}
-                        >
-                            {wallet.accounts.map((account) => (
-                                <option key={account.address} value={account.address}>
-                                    {account.address}
-                                </option>
-                            ))}
-                        </Form.Select>
-                    )}
-                </div>
-            ))}
-        </div>
+                ))}
+            </Modal.Body>
+        </Modal>
     )
 }
 

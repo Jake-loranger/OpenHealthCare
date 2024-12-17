@@ -27,15 +27,7 @@ const SideNavBar = () => {
                 <Button onClick={() => setShow(true)}>Connect Wallet</Button>
             </div>
 
-            {/* Modal for Wallet Connection */}
-            <Modal show={show} onHide={() => setShow(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Connect Wallet</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <ConnectWalletModal />
-                </Modal.Body>
-            </Modal>
+            <ConnectWalletModal show={show} onHide={() => setShow(false)} />
 
             {/* Mobile Sidebar */}
             <div className="d-md-none flex-column flex-shrink-0 bg-dark" style={{ width: "4.5rem" }}>
