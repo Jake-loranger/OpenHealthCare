@@ -8,10 +8,11 @@ import {
   WalletProvider,
   useWallet
 } from '@txnlab/use-wallet-react';
-import Home from './Home';
-import Profile from './Profile';
-import SideNavBar from './components/views/SideNavBar';
+import Home from './views/Home';
+import Profile from './views/Profile';
+import SideNavBar from './views/SideNavBar';
 import "./App.css";
+import Docs from './views/Docs';
 
 const App: React.FC = () => {
 
@@ -36,6 +37,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/home" element={<Home />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/docs" element={<Docs />} />
             </Routes>
           </Container>
         </div>
