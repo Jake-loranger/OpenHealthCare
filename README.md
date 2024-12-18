@@ -46,9 +46,9 @@ The economic viability of DHIP hinges on the principle that the total healthcare
 - DHIP participation pool size: 10,000 individuals.
 
 ### Calculation:
-- Total Annual Healthcare Cost (TAHC):
-- Total Insurance Premiums (TIP): 
-- Potential Savings:
+- Total Annual Healthcare Cost (TAHC): $120,000,000
+- Total Insurance Premiums (TIP): $150,000,000
+- Potential Savings: $30,000,000
 
 Under the DHIP model, participants collectively pool $120 million annually, covering healthcare costs directly while avoiding the $30 million in excess premiums typically absorbed by administrative costs and profits in traditional systems. This redistribution of funds not only lowers individual financial burdens but also ensures that surplus funds are reinvested for community benefit.
 
